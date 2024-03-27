@@ -41,7 +41,7 @@
     <!--Título-->
     <title>Viajes Chile</title>
   </head>
-  <body>
+  <body class="container-fluid">
     <!-- Header -->
     <header class="container-fluid">
       <!--Carousel-->
@@ -139,7 +139,38 @@
         </div>
       </nav>
     </header>
-    <!-- Body -->
+    <main>
+      <!-- Quienes somos -->
+      <!-- Contáctame-->
+      <section class="container-fluid" id="quienes-somos">
+        <h1 class="fw-semibold text-center text-light my-4">CONTACTO</h1>
+        <!--borde-->
+        <div
+          class="border-top border-secondary border-1 mx-2"
+        ></div>
+        <form class="container pt-4" id="formularioContacto" action="">
+          <div class="mb-3">
+            <label for="nombre" class="form-label text-light">Nombre</label>
+            <input type="text" class="form-control" id="nombre" />
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label text-light"
+              >Correo eléctronico</label
+            >
+            <input type="email" class="form-control" id="correo" />
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label text-light">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+          </div>
+          <div class="my-3 text-star">
+            <button type="submit" class="btn btn-info text-light enviar">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
     <!--footer-->
     <!-- JQuery -->
     <script
