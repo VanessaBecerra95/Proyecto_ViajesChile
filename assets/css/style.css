@@ -15,11 +15,19 @@ body {
   opacity: 0.4;
 }
 
+/*carousel*/
+
 .carousel-inner {
-  height: 100vh !important;
+  max-height: 100vh !important;
 }
 
 .carousel-item {
   background-position: center center;
   background-size: cover;
+}
+
+.icon-parrafo {
+  border-radius: 10px;
+  border-color: aliceblue;
+  border: 1px solid;
 }
