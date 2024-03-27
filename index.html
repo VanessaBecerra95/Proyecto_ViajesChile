@@ -43,50 +43,98 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="container">
-      <!-- Nav-->
-      <nav class="navbar navbar-expand-sm" id="navbarPrincipal">
-        <div class="container px-5">
-          <!-- Nombre de empresa -->
-          <a class="navbar-brand text-white fs-4" href="#"
-            ><img src="assets/img/viajes.svg" alt="Avión" width="30" />Viajes
-            Chile</a
-          >
-          <!-- botón de menú responsivo -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <!-- Listado -->
-            <ul class="navbar-nav ms-auto text-white" id="listado">
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#quienes-somos"
-                  >Quiénes Somos</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#Destacados">Destacados</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#Contacto">Contacto</a>
-              </li>
-            </ul>
+    <header class="container-fluid">
+           <!-- Nav-->
+           <nav class="navbar navbar-expand-sm" id="navbarPrincipal">
+            <div class="container px-5">
+              <!-- Nombre de empresa -->
+              <a class="navbar-brand text-white fs-4" href="#"
+                ><img src="assets/img/viajes.svg" alt="Avión" width="30" />Viajes
+                Chile</a
+              >
+              <!-- botón de menú responsivo -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Listado -->
+                <ul class="navbar-nav ms-auto text-white" id="listado">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active text-white"
+                      aria-current="page"
+                      href="#"
+                      >Inicio</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#quienes-somos"
+                      >Quiénes Somos</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#Destacados">Destacados</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#Contacto">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      <!-- Hero section  -->
+      <!--Carousel-->
+      <div id="carousel-heroSection" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/assets/img/carousel1.jpg"
+              class="d-block w-100"
+              alt="alpacas"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/assets/img/carousel2.jpg"
+              class="d-block w-100"
+              alt="moais"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/assets/img/carousel3.jpg"
+              class="d-block w-100"
+              alt="pinguino"
+            />
           </div>
         </div>
-      </nav>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel-heroSection"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel-heroSection"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </header>
     <!-- Body -->
     <!--footer-->
