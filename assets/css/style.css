@@ -26,8 +26,15 @@ body {
   background-size: cover;
 }
 
+/*parrafo*/
 .icon-parrafo {
   border-radius: 10px;
   border-color: aliceblue;
   border: 1px solid;
+}
+
+/*cards*/
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
