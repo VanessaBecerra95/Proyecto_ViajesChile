@@ -1,3 +1,4 @@
+//smoth scroll//
 $(document).ready(function () {
   $("a").on("click", function (event) {
     if (this.hash !== "") {
@@ -13,5 +14,13 @@ $(document).ready(function () {
         }
       );
     }
+  });
+});
+
+//boton de enviar formulario//
+
+$(function () {
+  $("#enviar-formulario").click(function () {
+    alert("Tus datos han sido enviado correctamente...");
   });
 });
