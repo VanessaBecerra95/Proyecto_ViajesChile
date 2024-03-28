@@ -17,10 +17,35 @@ $(document).ready(function () {
   });
 });
 
-//boton de enviar formulario//
+//validacion de formulario//
 
-$(function () {
-  $("#enviar-formulario").click(function () {
-    alert("Tus datos han sido enviado correctamente...");
+(() => {
+  "use strict";
+
+  const forms = document.querySelectorAll(".needs-validation");
+
+  Array.from(forms).forEach((form) => {
+    form.addEventListener(
+      "submit",
+      (event) => {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+
+        form.classList.add("was-validated");
+      },
+      false
+    );
   });
+})();
+
+// simulando envio de datos al servidor//
+document.querySelector("form").addEventListener("submit", function (event) {
+  event.preventDefault();
+  alert("Enviando datos al servidor");
+
+  setTimeout(function () {
+    alert("Los datos han sido enviados correctamente");
+  }, 2000);
 });

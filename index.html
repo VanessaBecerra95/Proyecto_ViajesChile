@@ -301,20 +301,38 @@
         <h3 class="text-center text-light pt-2 pb-4">CONTACTO</h3>
         <!--borde-->
         <div class="border-top border-secondary border-1 mx-2"></div>
-        <form class="container pt-4" id="formularioContacto" action="">
-          <div class="mb-3">
+        <form class="container pt-4 needs-validation" id="formularioContacto" action="" novalidate>
+          <div class="mb-3 position-relative">
             <label for="nombre" class="form-label text-light">Nombre</label>
             <input type="text" class="form-control" id="nombre" required/>
+            <div class="valid-tooltip">
+              Tu nombre es válido
+            </div>
+            <div class="invalid-tooltip">
+              Es necesario que ingreses tu nombre
+            </div>
           </div>
-          <div class="mb-3">
+          <div class="mb-3 position-relative">
             <label for="correo" class="form-label text-light"
               >Correo eléctronico</label
             >
             <input type="email" class="form-control" id="correo" required />
+            <div class="valid-tooltip">
+              Tu correo es válido
+            </div>
+            <div class="invalid-tooltip">
+              Es necesario que ingreses tu correo
+            </div>
           </div>
-          <div class="mb-3">
+          <div class="mb-3 position-relative">
             <label for="mensaje" class="form-label text-light">Mensaje</label>
             <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+            <div class="valid-tooltip">
+              Mensaje correcto
+            </div>
+            <div class="invalid-tooltip">
+              Es necesario que ingreses tu mensaje
+            </div>
           </div>
           <div class="my-3 text-star">
             <button type="submit" class="btn btn-info text-light" id="enviar-formulario">
