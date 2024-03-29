@@ -39,13 +39,3 @@ $(document).ready(function () {
     );
   });
 })();
-
-// simulando envio de datos al servidor//
-document.querySelector("form").addEventListener("submit", function (event) {
-  event.preventDefault();
-  alert("Enviando datos al servidor");
-
-  setTimeout(function () {
-    alert("Los datos han sido enviados correctamente");
-  }, 2000);
-});
