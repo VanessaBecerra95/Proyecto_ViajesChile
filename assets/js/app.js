@@ -40,6 +40,8 @@ $(document).ready(function () {
   });
 })();
 
+//tooltip//
+
 const tooltipTriggerList = document.querySelectorAll(
   '[data-bs-toggle="tooltip"]'
 );

@@ -15,6 +15,11 @@ body {
   opacity: 0.4;
 }
 
+.nav-link:hover {
+  opacity: 1;
+  animation: blink 2s linear infinite;
+}
+
 /*carousel*/
 
 .carousel-inner {
@@ -39,7 +44,33 @@ body {
   transition: 0.5s;
 }
 
-.custom-tooltip {
-  --bs-tooltip-bg: var(--bd-violet-bg);
-  --bs-tooltip-color: var(--bs-white);
+.iconos:hover {
+  rotate: 360deg;
+  transition: 0.5s;
+}
+
+/*h3 efectos*/
+h3:hover {
+  animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Scroll hide navbar */
+.navbar {
+  transition: top 0.6s !important;
+}
+
+body.user-is-scrolling .navbar {
+  top: -100px !important;
 }
